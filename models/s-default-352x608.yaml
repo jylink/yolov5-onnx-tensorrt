@@ -1,0 +1,16 @@
+model: "weights/s-default-352x608.trt"
+
+incl_norm: true  # whether the model include a normalization in forward
+input_w: 608
+input_h: 352
+conf_thres: 0.25
+iou_thres: 0.45
+
+names: ["people", "car"]
+
+# strides: [8, 16, 32]
+# anchors: [
+    # [3,4,  4,9,  7,6],  
+    # [8,13,  16,9,  15,18],  
+    # [30,16,  24,33,  55,41],
+# ]
